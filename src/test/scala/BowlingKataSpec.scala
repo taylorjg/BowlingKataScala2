@@ -1,9 +1,9 @@
 import org.scalatest.FunSpec
 import org.scalatest.prop.TableDrivenPropertyChecks._
 
-class TennisKataSpec extends FunSpec {
+class BowlingKataSpec extends FunSpec {
 
-	describe("TennisKata tests") {
+	describe("BowlingKata tests") {
 
 		def rep(n: Int, elem: Int) = List.fill(n)(elem)
 
@@ -22,7 +22,7 @@ class TennisKataSpec extends FunSpec {
 
 		it("calculates the correct score for various sequences of rolls") {
 			forAll (rowsOfTestData) { (_, rs, expectedScore) =>
-				val actualScore = TennisKata.score(rs)
+				val actualScore = BowlingKata.score(rs)
 				assertResult(expectedScore)(actualScore)
 			}
 		}

@@ -1,4 +1,4 @@
-object TennisKata {
+object BowlingKata {
 	def score(rs: List[Int]) = {
 		def loop(s: Int, f: Int, rs: List[Int]): Int = {
 			(s, f, rs) match {
